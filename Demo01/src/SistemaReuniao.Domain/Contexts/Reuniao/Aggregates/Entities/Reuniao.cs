@@ -39,8 +39,8 @@ public sealed class Reuniao : Entidade
     public int NumeroDeParticipantes { get; private set; }
 
     // Coleções somente leitura expostas para manter a integridade do agregado.
-    public IReadOnlyCollection<Participante> Participantes => _participantes;
-    public IReadOnlyCollection<Convite> Convites => _convites;
+    public IReadOnlyCollection<Participante> Participantes => _participantes.AsReadOnly();
+    public IReadOnlyCollection<Convite> Convites => _convites.AsReadOnly();
 
     // Método de fábrica para criar uma nova reunião, aplicando regras de negócio na criação.
     public static Reuniao Criar(
