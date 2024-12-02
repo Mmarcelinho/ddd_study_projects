@@ -16,7 +16,7 @@ public class Workout : Entity, IContract
         Date = date;
         Duration = duration;
         UserId = userId;
-        _exercises = []; 
+        _exercises = [];
     }
 
     public string Name { get; private set; }
@@ -32,7 +32,7 @@ public class Workout : Entity, IContract
     public override bool Validate()
     {
         var contracts = new ContractValidations<Workout>()
-            .NameIsOk(Name, 3, 30, DomainErrors.WORKOUT_NAME, nameof(Name)); 
+            .NameIsOk(Name, 3, 30, DomainErrors.WORKOUT_NAME, nameof(Name));
 
         SetNotificationList(contracts.Notifications as List<Notification>);
         return contracts.IsValid();
@@ -40,6 +40,5 @@ public class Workout : Entity, IContract
 
     public static Workout Create(string name, DateTime date, TimeSpan duration, Guid userId) => new(name, date, duration, userId);
 
-    public void AddExercise(Exercise exercise) => _exercises.Add(exercise); 
-    
+    public void AddExercise(Exercise exercise) => _exercises.Add(exercise);
 }

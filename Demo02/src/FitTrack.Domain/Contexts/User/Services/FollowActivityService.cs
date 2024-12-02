@@ -6,7 +6,7 @@ namespace FitTrack.Domain.Contexts.User.Services;
 public class FollowActivityService
 {
     public void FollowActivity(
-        User.Aggregates.Entities.User user,
+        Aggregates.Entities.User user,
         Activity.Aggregates.Entities.Activity activity)
     {
         if (activity is null)

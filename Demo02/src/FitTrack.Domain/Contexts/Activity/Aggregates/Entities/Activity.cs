@@ -25,10 +25,15 @@ public sealed class Activity : Entity, IContract
     }
 
     public string Name { get; private set; }
+
     public double Distance { get; private set; }
+
     public TimeSpan Duration { get; private set; }
+
     public double AveragePace { get; private set; }
+
     public double AverageHeartRate { get; private set; }
+
     public Guid UserId { get; private set; }
 
     public IReadOnlyCollection<Comment> Comments => _comments.AsReadOnly();

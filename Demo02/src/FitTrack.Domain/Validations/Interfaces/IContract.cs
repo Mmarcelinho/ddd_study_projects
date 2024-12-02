@@ -1,3 +1,3 @@
 namespace FitTrack.Domain.Validations.Interfaces;
 
-    public interface IContract { }
+public interface IContract { }

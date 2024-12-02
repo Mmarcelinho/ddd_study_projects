@@ -1,6 +1,3 @@
 namespace SistemaReuniao.Domain.Contexts.Membro.Exceptions;
 
-public class ValidacaoException : DomainException
-{
-    public ValidacaoException(string mensagem) : base(mensagem) { }
-}
+public class ValidacaoException(string mensagem) : DomainException(mensagem) { }

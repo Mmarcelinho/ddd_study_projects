@@ -1,6 +1,6 @@
 namespace SistemaReuniao.Domain.Repositories;
 
-    public interface IUnitOfWork
-    {
-        Task SaveChangesAsync();
-    }
+public interface IUnitOfWork
+{
+    Task SaveChangesAsync();
+}

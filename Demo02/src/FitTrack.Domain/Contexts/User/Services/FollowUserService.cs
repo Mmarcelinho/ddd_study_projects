@@ -6,8 +6,8 @@ namespace FitTrack.Domain.Contexts.User.Services;
 public class FollowUserService
 {
     public void FollowUser(
-        User.Aggregates.Entities.User follower,
-        User.Aggregates.Entities.User userToFollow)
+        Aggregates.Entities.User follower,
+        Aggregates.Entities.User userToFollow)
     {
         if (userToFollow == null)
             throw new ValidationException(DomainErrors.USER_NULL);

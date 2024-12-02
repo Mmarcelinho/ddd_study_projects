@@ -11,7 +11,7 @@ public abstract class Entity : IValidate
     {
         Id = Guid.NewGuid();
         DateCreatedUtc = DateTime.UtcNow;
-        _notifications = new List<Notification>();
+        _notifications = [];
     }
 
     public Guid Id { get; private set; }

@@ -8,6 +8,7 @@ public record Notification
         PropertyName = propertyName;
     }
 
-    public string Message { get; } 
+    public string Message { get; }
+    
     public string PropertyName { get; }
 }

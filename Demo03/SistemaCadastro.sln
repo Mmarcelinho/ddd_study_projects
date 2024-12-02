@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaCadastro.Domain", "SistemaCadastro.Domain\SistemaCadastro.Domain.csproj", "{2A0EC9CD-93FC-46A0-BA7A-1DA0962B0664}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{14225C1F-D7B2-4306-9EB0-ED2354D77774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Test", "tests\Domain.Test\Domain.Test.csproj", "{CBE84C6C-EB44-4D27-9190-3AC0A54D206D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,12 @@ Global
 		{2A0EC9CD-93FC-46A0-BA7A-1DA0962B0664}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A0EC9CD-93FC-46A0-BA7A-1DA0962B0664}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A0EC9CD-93FC-46A0-BA7A-1DA0962B0664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE84C6C-EB44-4D27-9190-3AC0A54D206D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE84C6C-EB44-4D27-9190-3AC0A54D206D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE84C6C-EB44-4D27-9190-3AC0A54D206D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE84C6C-EB44-4D27-9190-3AC0A54D206D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBE84C6C-EB44-4D27-9190-3AC0A54D206D} = {14225C1F-D7B2-4306-9EB0-ED2354D77774}
 	EndGlobalSection
 EndGlobal

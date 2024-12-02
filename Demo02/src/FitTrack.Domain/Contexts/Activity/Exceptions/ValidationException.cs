@@ -1,6 +1,3 @@
 namespace FitTrack.Domain.Contexts.Activity.Exceptions;
 
-public class ValidationException : DomainException
-{
-    public ValidationException(string message) : base(message) { }
-}
+public class ValidationException(string message) : DomainException(message) { }
